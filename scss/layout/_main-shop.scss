@@ -1,0 +1,59 @@
+.grid-container-shop{
+    @include layout-noindex;
+    background-color: $background-color;
+    padding: 0px 30px 0px 30px;
+    main{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-areas:
+        "title-page title-page title-page"
+        "shop-section shop-section shop-section";
+        justify-content: center;
+        padding: 10px 30px 30px 30px;
+        gap: 60px;
+        h1{
+            @include title;
+            }
+        section{
+            grid-area: shop-section;
+            display: grid;
+            grid-template-areas:
+            "shop-card shop-card shop-card"
+            "shop-card shop-card shop-card";
+            flex-wrap: nowrap;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: justify;
+                padding-top: 20px;
+                padding-bottom: 100px;
+                img{
+                    width: 90%;
+                }
+                p{
+                    width: 90%;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    font-size: 1.5vw;
+                    color: $font-color;
+                    font-family: 'Lora', serif;
+                }
+                a{
+                    width: 90%;
+                    height: auto;
+                    background-color: #38150B;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    font-size: 25px;
+                    text-decoration: none;
+                    color: #ffffff;
+                    border-radius: 8px;
+                    padding: 5px;
+                }
+            }
+        }   
+    }
+}

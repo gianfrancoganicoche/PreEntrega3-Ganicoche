@@ -1,0 +1,13 @@
+@mixin title{
+    font-size: 4vw;
+    font-weight: lighter;
+    color: $font-color;
+    font-family: 'Baloo Paaji 2', cursive;
+}
+@mixin layout-noindex{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}

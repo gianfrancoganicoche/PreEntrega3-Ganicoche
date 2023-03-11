@@ -1,0 +1,41 @@
+.grid-container-about{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "about-main"
+    "footer";
+    background-color:#C6B4A5;
+    padding: 0px 30px 0px 30px;
+    main{
+        grid-area: about-main;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "about-section about-photo";
+        background-color: #C6B4A5;
+        align-items: center;
+        padding: 10px 60px 30px 30px;
+        gap: 60px;
+        section{
+            grid-area: about-section;
+            width: 100%;
+            h1{
+                @include title;
+            }
+            p{
+                display: flex;
+                flex-wrap: wrap;
+                text-align: justify;
+                padding-top: 30px;
+                font-size: 1.5vw;
+                font-family: fantasy;
+                color: $font-color;
+                font-family: 'Lora', serif
+            }
+        }
+        div img{
+            grid-area: about-photo;
+            width: 100%;
+        }
+    }
+}

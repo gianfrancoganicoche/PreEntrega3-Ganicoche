@@ -1,0 +1,140 @@
+@media (max-width:1024px){
+    header{
+        padding: 0;
+        padding-left: 0px;
+        width: 97%;
+        justify-self: center;
+        span a img{
+            margin-top: 10px;
+            margin-right: 5px;
+            &:hover{
+                height: 85px;
+            }
+        }
+        nav div{ 
+            width: auto;
+        }
+    }
+    .menu-items{
+        gap: 35px;
+        li{
+            margin-bottom: 1rem;
+        }
+        a{
+            font-size: 1.25rem;
+            padding-left: 15px;
+            }
+        }
+    .grid-container-home {
+        main{ 
+            h1{
+                font-size: 85px;
+            }
+            article{
+                font-size: 36px;
+                font-weight: bold;
+                padding-bottom: 30px;
+            }
+            a{
+                font-size: 29px;
+                color: #C6B4A5;
+                &:hover{
+                    font-size: 35px;
+                }
+            }
+        }   
+    }
+    .grid-container-about{
+        padding: 0px 30px 0px 0px;
+        main{
+            grid-template-columns: auto;
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas:
+            "about-section"
+            "about-photo";
+            padding: 10px 30px 30px 60px;
+            gap: 30px;
+            section{
+                h1{
+                    font-size: 5vw;
+                }
+                p{
+                    padding-top: 15px;
+                    font-size: 1.7vw;
+                }
+            }
+            div{
+                align-items: center;
+            } 
+            img{
+                width: 95%;
+            }
+        }
+    }
+    .grid-container-shop{
+        padding: 0px 0px 0px 0px;
+        main{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas:
+            "title-page title-page"
+            "shop-section shop-section";
+            padding: 10px 30px 30px 60px;
+            gap: 30px;
+            h1{
+                font-size: 5vw;
+                }
+            section{
+                grid-template-areas:
+                "shop-card shop-card";
+                div{
+                    padding-bottom: 80px;
+                    img{
+                        width: 95%;
+                    }
+                    p{
+                        width: 95%;
+                        font-size: 1.8vw;
+                    }
+                    a{
+                        @include shop-now-button (20px,90%,5px)
+                    }
+                }
+            }   
+        }
+    }
+    .grid-container-blog{
+        padding: 0px 0px 0px 0px;
+        main{
+            grid-template-columns: repeat(2,1fr);
+            grid-template-areas:
+            "title-page title-page"
+            "blog-section blog-section";
+            padding: 10px 60px 30px 60px;
+            h1{
+                font-size: 5vw;
+            }
+            section{
+                grid-template-areas:
+                "blog-card blog-card";
+                gap: 30px;
+                article{
+                    p{
+                        font-size: 1.6vw;
+                    }
+                    a{
+                        @include shop-now-button(1.8vw,auto,5px)
+                    }
+                }
+            }
+        }
+    }
+    .grid-container-locations{
+        padding: 0px 0px 0px 0px;
+        main{
+            padding: 10px 30px 30px 60px;
+            h1{
+                @include title(5vw);
+            }
+        }
+    }
+}

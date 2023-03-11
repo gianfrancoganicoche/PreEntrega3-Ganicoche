@@ -11,7 +11,7 @@
         "location-section";
         padding: 10px 30px 30px 30px;
         h1{
-            @include title;
+            @include title(4vw);
         }
         section{
             width: 100%;

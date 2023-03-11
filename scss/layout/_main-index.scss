@@ -34,16 +34,7 @@
             padding-bottom: 40px;
         }
         a{
-            width: 180px;
-            background-color: #38150B;
-            display: flex;
-            font-size: 30px;
-            border-radius: 10px;
-            color: #cacaca;
-            justify-content: center;
-            align-content: center;
-            text-decoration: none;
-            font-family: 'Niramit', sans-serif;
+            @include shop-now-button(30px,180px,auto)
         }
     }
 }

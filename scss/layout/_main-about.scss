@@ -4,7 +4,7 @@
     "header"
     "about-main"
     "footer";
-    background-color:#C6B4A5;
+    background-color: $background-color;
     padding: 0px 30px 0px 30px;
     main{
         grid-area: about-main;
@@ -12,7 +12,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "about-section about-photo";
-        background-color: #C6B4A5;
+        background-color: $background-color;
         align-items: center;
         padding: 10px 60px 30px 30px;
         gap: 60px;
@@ -20,7 +20,7 @@
             grid-area: about-section;
             width: 100%;
             h1{
-                @include title;
+                @include title(4vw);
             }
             p{
                 display: flex;

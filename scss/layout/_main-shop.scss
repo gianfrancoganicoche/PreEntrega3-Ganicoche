@@ -12,7 +12,7 @@
         padding: 10px 30px 30px 30px;
         gap: 60px;
         h1{
-            @include title;
+            @include title(4vw);
             }
         section{
             grid-area: shop-section;
@@ -41,17 +41,7 @@
                     font-family: 'Lora', serif;
                 }
                 a{
-                    width: 90%;
-                    height: auto;
-                    background-color: #38150B;
-                    display: flex;
-                    justify-content: center;
-                    align-content: center;
-                    font-size: 25px;
-                    text-decoration: none;
-                    color: #ffffff;
-                    border-radius: 8px;
-                    padding: 5px;
+                    @include shop-now-button (25px,90%,5px)
                 }
             }
         }   

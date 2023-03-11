@@ -1,172 +1,138 @@
 @media (max-width:768px){
-    .navbar .menu-items {
+    header{
+        span a img{
+            background-color: transparent;
+            }
+        }
+    .menu-items {
         background-color: #C6B4A5;
         flex-direction: column;
         padding-left: 0px;
         text-align: center;
         gap: 5px;
-    }
-    .navbar .menu-items li a{
-        font-family: 'Niramit', sans-serif;
-        padding-left: 70px;
-    }
-    .logo-index a img{
-        height: 70px;
-        background-color: transparent;
-    }
+            li a{
+                font-family: 'Niramit', sans-serif;
+                padding-left: 90px;
+            }
+        }
     footer{
-        grid-area: footer;
-        display: flex;
         padding: 30px;
-    }
-    .social-media{
-        display: flex;
-        list-style: none;
+        nav ul{
         gap: 20px;
+            li a img{
+                height: 30px;
+            }
+        }
     }
-    .social-media li a img{
-        height: 30px;
-    }
-    .grid-container-home{
+    .grid-container-home {
         padding-right: 0px;
         backdrop-filter: blur(5px);
         padding: 0px;
-    }
-    .home-title{
-        font-family: 'Patua One', cursive;
-        color: #38150B;
-        justify-content: center;
-        font-size: 13vw;
-    }
-    .home-background{
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        justify-items: center;
-    }
-    .home-subtitle{
-        padding-bottom: 20px;
-        font-size: 6vw;
-    }
-    .home-shop-now{
-        width: 33vw;
-        background-color: #C6B4A5;
-        display: flex;
-        font-size: 6vw;
-        border-radius: 15px;
-        color: #38150B;
+        main{
+            align-items: center;
+            justify-items: center;
+            h1{
+                justify-content: center;
+                font-size: 13vw;
+            }
+            article{
+                padding-bottom: 20px;
+                font-size: 6vw;
+            }
+            a{
+                width: 33vw;
+                background-color: $background-color;
+                font-size: 6vw;
+                border-radius: 15px;
+                color: $font-color;
+                &:hover{
+                    font-size: 6.5vw;
+                }
+            }
+        }   
     }
     .grid-container-about{
-        padding: 0px;
-    }
-    .about-main{
-        grid-template-columns: auto;
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas:
-        "about-section"
-        "about-photo";
-        padding: 0px 40px 40px 40px;
-        gap: 40px;
-        align-items: flex-start;
-    }
-    .title-page{
-        font-size: 40px;
-        text-align: center;
-    }
-    .about-text{
-        padding-top: 20px;
-        font-size: 20px;
+        main{
+            section{
+                h1{
+                    font-size: 40px;
+                    text-align: center;
+                }
+                p{
+                    padding-top: 20px;
+                    font-size: 20px;
+                }
+            }
+        }
     }
     .grid-container-shop{
-        padding: 0px;
-    }
-    .main-shop{
-        grid-template-columns: 100%;
-        grid-template-rows: repeat(2,auto);
-        grid-template-areas:
-        "title-page"
-        "shop-section";
-        justify-content: center;
-        padding: 0px;
-        gap: 0px;
-    }
-    .shop-section{
-        display: grid;
-        grid-template-areas:
-        "shop-card shop-card";
-        justify-content: center;
-        align-items: center;
-    }
-    .shop-card{
-        padding-bottom: 100px;
-    }
-    .shop-card img{
-        width: 80%;
-    }
-    .shop-card p{
-        width: 80%;
-        padding-top: 10px;
-        padding-bottom: 0px;
-        font-size: 2.5vw;
-        font-family: 'Lora', serif;
-    }
-    .shop-button{
-        font-size: 2.5vw;
-        text-decoration: none;
-        padding: 8px;
-        width: 80%;
+        main{
+            grid-template-columns: 100%;
+            grid-template-rows: repeat(2,auto);
+            grid-template-areas:
+            "title-page"
+            "shop-section";
+            gap: 0px;
+            section{
+                div{
+                    padding-bottom: 60px;
+                    img{
+                        width: 80%;
+                        }
+                    p{
+                        width: 80%;
+                        font-size: 2.5vw;
+                        padding-top: 10px;
+                        padding-bottom: 0px;
+                    }
+                    a{
+                        font-size: 2.5vw;
+                        text-decoration: none;
+                        padding: 8px;
+                        width: 50%;
+                    }
+                }
+            }
+        }
     }
     .grid-container-blog{
-        padding: 0px;
-    }
-    .blog-main{
+        main{
         grid-template-columns: 100%;
         grid-template-rows: repeat(2,auto);
         grid-template-areas:
         "title-title"
         "blog-section";
-        justify-content: center;
-        padding: 0px;
-        gap: 0px;
+        section{
+            gap: 40px;
+            article{
+                gap: 5px;
+                padding: 0px;
+                padding-bottom: 10px;
+                    p{
+                        width: 80%;
+                        font-size: 2.5vw;
+                    }
+                    a{
+                        font-size: 2.5vw;
+                        padding: 6px;
+                    }
+                }
+            }
+        }
     }
-    .blog-section{
-        display: grid;
-        grid-template-areas:
-        "shop-card shop-card";
-        justify-content: center;
-        align-items: center;
-    }
-    .blog-card{
-        width: 90%;
-        gap: 5px;
-        padding: 0px;
-        padding-bottom: 10px;
-    }
-    .blog-card img{
-        width: 80%;
-    }
-    .blog-card p{
-        width: 80%;
-        padding-top: 10px;
-        padding-bottom: 0px;
-        font-size: 2.5vw;
-        font-family: 'Lora', serif;
-    }
-    .blog-button{
-        width: 90%;
-        background-color: #38150B;
-        font-size: 2.5vw;
-    }
-    .main-locations{
-        padding: 0px;
-    }
-    .location-card{
-        width: 80%;
-        height: 80vi;
-        padding: 0px;
-    }
-    .maps{
-        width: 90%;
-        height: 90%;
+    .grid-container-locations{
+        main{
+            section{
+                span{
+                    width: 80%;
+                    height: 80vi;
+                    padding: 0px;
+                    iframe{
+                        width: 90%;
+                        height: 90%;
+                    }
+                }
+            }
+        }
     }
 }

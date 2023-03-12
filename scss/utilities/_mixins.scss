@@ -24,6 +24,10 @@
     font-family: 'Niramit', sans-serif;
     padding: $padding;
 }
+@mixin title-768{
+    font-size: 40px;
+    text-align: center;
+}
 @mixin title-425{
     font-size: 30px;
     text-align: center;

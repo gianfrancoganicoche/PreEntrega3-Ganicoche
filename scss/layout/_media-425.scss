@@ -1,6 +1,6 @@
 @media (max-width:425px){
 header{
-    width: 80%;
+    width: 90%;
     justify-content: center;
     .menu-items {
         li a{
@@ -18,7 +18,6 @@ header{
                 @include title-425;
             }
             p{
-                padding-top: 20px;
                 font-size: 16px;
             }
         }
@@ -67,13 +66,15 @@ header{
             grid-template-areas: 
             "blog-card";
             article{
+                img{
+                    width: 90%;
+                }
                     p{
                         width: 90%;
                         font-size: 16px;
                     }
                     a{
-                        font-size: 16px;
-                        padding: 4px;
+                        @include shop-now-button (16px,50%,5px)
                     }
                 }
             }

@@ -8,7 +8,6 @@
         background-color: #C6B4A5;
         flex-direction: column;
         padding-left: 0px;
-        text-align: center;
         gap: 5px;
             li a{
                 font-family: 'Niramit', sans-serif;
@@ -55,8 +54,7 @@
         main{
             section{
                 h1{
-                    font-size: 40px;
-                    text-align: center;
+                    @include title-768
                 }
                 p{
                     padding-top: 20px;
@@ -73,6 +71,9 @@
             "title-page"
             "shop-section";
             gap: 0px;
+            h1{
+                @include title-768;
+            }
             section{
                 div{
                     padding-bottom: 60px;
@@ -102,6 +103,9 @@
         grid-template-areas:
         "title-title"
         "blog-section";
+        h1{
+            @include title-768;
+        }
         section{
             gap: 40px;
             article{
@@ -122,11 +126,13 @@
     }
     .grid-container-locations{
         main{
+            h1{
+                @include title-768;
+            }
             section{
                 span{
                     width: 80%;
                     height: 80vi;
-                    padding: 0px;
                     iframe{
                         width: 90%;
                         height: 90%;

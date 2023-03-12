@@ -34,7 +34,10 @@
             padding-bottom: 40px;
         }
         a{
-            @include shop-now-button(30px,180px,auto)
+            @include shop-now-button(30px,180px,auto);
+            &:hover{
+                font-size: 32px;
+            }
         }
     }
 }

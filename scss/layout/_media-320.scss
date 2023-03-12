@@ -1,2 +1,47 @@
 @media (max-width: 320px){
+    .grid-container-shop{
+        main{
+            section{
+                div{
+                    img{
+                        width: 80%;
+                    }
+                    p{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+    .grid-container-blog{
+        main{
+            align-items: center;
+            section{
+                width: 80%;
+                justify-self: center;
+                article{
+                    width: 90%;
+                    img{
+                        width: 80%;
+                    }
+                    p{
+                        width: 80%;
+                    }
+                }
+            }
+        }
+    }
+    .grid-container-locations{
+        main{
+            justify-items: center;
+            section{
+                width: 90%;
+            }
+            section{
+                span{
+                    width: 90%;
+                }
+            }
+        }
+    }    
 }

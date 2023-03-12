@@ -30,7 +30,7 @@
                 padding-top: 20px;
                 padding-bottom: 100px;
                 img{
-                    width: 90%;
+                    width: 29vi;
                 }
                 p{
                     width: 90%;
@@ -39,6 +39,7 @@
                     font-size: 1.5vw;
                     color: $font-color;
                     font-family: 'Lora', serif;
+                    text-align: center;
                 }
                 a{
                     @include shop-now-button (25px,90%,5px)

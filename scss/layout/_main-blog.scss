@@ -17,6 +17,7 @@
             @include title(4vw);
         }
         section{
+            height: auto;
             grid-area: blog-section;
             display: grid;
             grid-template-areas:
@@ -33,8 +34,9 @@
                 background-color: $background-color;
                 border-radius: 10px;
                 width: 90%;
+                height: 100%;
                 gap: 20px;
-                padding: 20px;
+                padding-bottom: 20px;
                 img{
                     width: 90%;
                     padding-top: 20px;

@@ -9,8 +9,11 @@ header{
     }
 }
 .grid-container-about{
+    padding: 0px 0px 0px 0px;
     main{
         section{
+            width: 90%;
+            justify-content: center;    
             h1{
                 @include title-425;
             }
@@ -19,18 +22,20 @@ header{
                 font-size: 16px;
             }
         }
+        div img{
+            width: 90%;
+        }
     }
 }
 .grid-container-shop{
-    width: 90%;
-    padding-left: 20px;
-    align-content: center;
     main{
         padding: 0px 0px 0px 0px;
             h1{
                 @include title-425;
                 }
             section{
+                width: 100%;
+                align-content: center;
                 grid-template-areas:
                 "shop-card";
                 div{

@@ -137,7 +137,9 @@ footer {
 
 .grid-container-home {
   display: grid;
-  grid-template-areas: "header" "main-home" "footer";
+  grid-template-areas: "header"
+ "main-home"
+ "footer";
   background: url(../assets/background-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -180,7 +182,9 @@ footer {
 
 .grid-container-about {
   display: grid;
-  grid-template-areas: "header" "about-main" "footer";
+  grid-template-areas: "header"
+ "about-main"
+ "footer";
   background-color: #C6B4A5;
   padding: 0px 30px 0px 30px; }
   .grid-container-about main {
@@ -215,13 +219,16 @@ footer {
 
 .grid-container-shop {
   display: grid;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header"
+ "main"
+ "footer";
   background-color: #C6B4A5;
   padding: 0px 30px 0px 30px; }
   .grid-container-shop main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "title-page title-page title-page" "shop-section shop-section shop-section";
+    grid-template-areas: "title-page title-page title-page"
+ "shop-section shop-section shop-section";
     justify-content: center;
     padding: 10px 30px 30px 30px;
     gap: 60px; }
@@ -233,7 +240,8 @@ footer {
     .grid-container-shop main section {
       grid-area: shop-section;
       display: grid;
-      grid-template-areas: "shop-card shop-card shop-card" "shop-card shop-card shop-card";
+      grid-template-areas: "shop-card shop-card shop-card"
+ "shop-card shop-card shop-card";
       flex-wrap: nowrap; }
       .grid-container-shop main section div {
         display: flex;
@@ -267,7 +275,9 @@ footer {
 
 .grid-container-blog {
   display: grid;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header"
+ "main"
+ "footer";
   background: url(../assets/background-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -275,7 +285,8 @@ footer {
   .grid-container-blog main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "title-page title-page title-page" "blog-section blog-section blog-section";
+    grid-template-areas: "title-page title-page title-page"
+ "blog-section blog-section blog-section";
     justify-content: center;
     padding: 10px 30px 30px 30px;
     width: 100%; }
@@ -287,7 +298,8 @@ footer {
     .grid-container-blog main section {
       grid-area: blog-section;
       display: grid;
-      grid-template-areas: "blog-card blog-card blog-card" "blog-card blog-card blog-card";
+      grid-template-areas: "blog-card blog-card blog-card"
+ "blog-card blog-card blog-card";
       flex-wrap: nowrap;
       gap: 20px; }
       .grid-container-blog main section article {
@@ -325,14 +337,17 @@ footer {
 
 .grid-container-locations {
   display: grid;
-  grid-template-areas: "header" "main" "footer";
+  grid-template-areas: "header"
+ "main"
+ "footer";
   background: url(../assets/background-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0px 30px 0px 30px; }
   .grid-container-locations main {
     display: grid;
-    grid-template-areas: "title-page" "location-section";
+    grid-template-areas: "title-page"
+ "location-section";
     padding: 10px 30px 30px 30px; }
     .grid-container-locations main h1 {
       font-size: 4vw;
@@ -399,7 +414,8 @@ footer {
     .grid-container-about main {
       grid-template-columns: auto;
       grid-template-rows: repeat(2, auto);
-      grid-template-areas: "about-section" "about-photo";
+      grid-template-areas: "about-section"
+ "about-photo";
       padding: 10px 30px 30px 60px;
       gap: 30px; }
       .grid-container-about main section h1 {
@@ -415,7 +431,8 @@ footer {
     padding: 0px 0px 0px 0px; }
     .grid-container-shop main {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "title-page title-page" "shop-section shop-section";
+      grid-template-areas: "title-page title-page"
+ "shop-section shop-section";
       padding: 10px 30px 30px 60px;
       gap: 30px; }
       .grid-container-shop main h1 {
@@ -445,7 +462,8 @@ footer {
     padding: 0px 0px 0px 0px; }
     .grid-container-blog main {
       grid-template-columns: repeat(2, 1fr);
-      grid-template-areas: "title-page title-page" "blog-section blog-section";
+      grid-template-areas: "title-page title-page"
+ "blog-section blog-section";
       padding: 10px 60px 30px 60px; }
       .grid-container-blog main h1 {
         font-size: 5vw; }
@@ -524,7 +542,8 @@ footer {
   .grid-container-shop main {
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "title-page" "shop-section";
+    grid-template-areas: "title-page"
+ "shop-section";
     gap: 0px; }
     .grid-container-shop main section div {
       padding-bottom: 60px; }
@@ -543,7 +562,8 @@ footer {
   .grid-container-blog main {
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
-    grid-template-areas: "title-title" "blog-section"; }
+    grid-template-areas: "title-title"
+ "blog-section"; }
     .grid-container-blog main section {
       gap: 40px; }
       .grid-container-blog main section article {
@@ -564,65 +584,74 @@ footer {
       width: 90%;
       height: 90%; } }
 
-@media (max-width: 320px) {
+@media (max-width: 425px) {
   header {
-    padding: 0px; }
-  .logo-index a img {
-    height: 70px; }
-  .grid-container-index {
-    background-position: -750px;
-    backdrop-filter: blur(5px); }
-  .home-title {
-    font-family: 'Patua One', cursive;
-    color: #38150B;
+    width: 80%;
     justify-content: center; }
-  .home-background {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    justify-items: center; }
-  .home-subtitle {
-    padding-bottom: 20px; }
-  .home-shop-now {
-    background-color: #C6B4A5;
-    display: flex;
-    border-radius: 15px;
-    color: #38150B; }
-  .title-page {
-    font-size: 40px; }
-  .shop-section {
-    grid-template-areas: "shop-card"; }
-  .shop-card img {
-    width: 80%; }
-  .shop-card p {
-    width: 80%;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    font-size: 15px;
-    font-family: 'Lora', serif; }
-  .shop-button {
-    font-size: 15px;
-    padding: 6px; }
-  .blog-section {
-    grid-template-areas: "shop-card"; }
-  .blog-card {
+    header .menu-items li a {
+      font-size: 18px; }
+  .grid-container-about main section h1 {
+    font-size: 30px;
+    text-align: center; }
+  .grid-container-about main section p {
+    padding-top: 20px;
+    font-size: 16px; }
+  .grid-container-shop {
     width: 90%;
-    gap: 5px;
-    padding: 0px;
-    padding-bottom: 10px;
-    padding-bottom: 25px; }
-  .blog-card img {
-    width: 80%;
-    padding-top: 25px; }
-  .blog-card p {
-    width: 80%;
-    font-size: 15px; }
-  .blog-button {
-    font-size: 15px; }
-  .location-card {
-    width: 80%;
-    height: 288px;
-    padding: 0px; }
-  .maps {
-    width: 90%;
-    height: 90%; } }
+    padding-left: 20px;
+    align-content: center; }
+    .grid-container-shop main {
+      padding: 0px 0px 0px 0px; }
+      .grid-container-shop main h1 {
+        font-size: 30px;
+        text-align: center; }
+      .grid-container-shop main section {
+        grid-template-areas: "shop-card"; }
+        .grid-container-shop main section div img {
+          width: 90%; }
+        .grid-container-shop main section div p {
+          width: 90%;
+          font-size: 16px;
+          text-align: center; }
+        .grid-container-shop main section div a {
+          width: 50%;
+          background-color: #38150B;
+          display: flex;
+          font-size: 16px;
+          border-radius: 8px;
+          color: #ffffff;
+          justify-content: center;
+          align-content: center;
+          text-decoration: none;
+          font-family: 'Niramit', sans-serif;
+          padding: 5px; }
+  .grid-container-blog {
+    backdrop-filter: blur(5px); }
+    .grid-container-blog main {
+      padding: 0px 0px 0px 0px; }
+      .grid-container-blog main h1 {
+        font-size: 30px;
+        text-align: center; }
+      .grid-container-blog main section {
+        width: 100%;
+        align-content: center;
+        grid-template-areas: "blog-card"; }
+        .grid-container-blog main section article p {
+          width: 90%;
+          font-size: 16px; }
+        .grid-container-blog main section article a {
+          font-size: 16px;
+          padding: 4px; }
+  .grid-container-locations {
+    backdrop-filter: blur(5px); }
+    .grid-container-locations main {
+      padding: 0px 0px 0px 0px;
+      justify-content: center; }
+      .grid-container-locations main section {
+        width: 95%;
+        padding-left: 5%; }
+      .grid-container-locations main h1 {
+        font-size: 30px;
+        text-align: center; }
+      .grid-container-locations main section span {
+        width: 100%; } }

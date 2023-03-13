@@ -3,7 +3,7 @@
     background: url(../assets/background-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0px 30px 0px 30px;
+    padding: 0px 10px 0px 10px;   
     main{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -14,7 +14,7 @@
         padding: 10px 30px 30px 30px;
         width: 100%;
         h1{
-            @include title(4vw);
+            @include title(2.5em);
         }
         section{
             height: auto;
@@ -44,12 +44,15 @@
                 p{
                     width: 90%;
                     padding-top: 10px;
-                    font-size: 1.3vw;
+                    font-size: 1.2em;
                     color: $font-color;
                     font-family: 'Lora', serif;
                 }
                 a{
-                    @include shop-now-button(1.5vw,auto,5px)
+                    @include shop-now-button(1.5vw,40%,5px);
+                    &:hover{
+                        transform:scale(1.05);
+                    }
                 }
             }
         }

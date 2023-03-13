@@ -1,7 +1,7 @@
 .grid-container-shop{
     @include layout-noindex;
-    background-color: $background-color;
-    padding: 0px 30px 0px 30px;
+    background-image: linear-gradient(to bottom, #c6b4a5, #c6b1a0, #c6ae9b, #c5ac96, #c5a991, #bb9f87, #b1957e, #a78b74, #917864, #7b6655, #665546, #524438);
+    padding: 0px 10px 0px 10px;   
     main{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -10,9 +10,9 @@
         "shop-section shop-section shop-section";
         justify-content: center;
         padding: 10px 30px 30px 30px;
-        gap: 60px;
+        gap: 40px;
         h1{
-            @include title(4vw);
+            @include title(2.5em);
             }
         section{
             grid-area: shop-section;
@@ -27,24 +27,27 @@
                 justify-content: center;
                 align-items: center;
                 text-align: justify;
-                padding-top: 20px;
-                padding-bottom: 100px;
+                padding-top: 0px;
+                padding-bottom: 50px;
                 img{
                     width: 29vi;
                 }
                 p{
                     width: 90%;
-                    padding-top: 20px;
-                    padding-bottom: 20px;
-                    font-size: 1.5vw;
+                    padding-top: 10px;
+                    padding-bottom: 0px;
+                    font-size: 1.2em;
                     color: $font-color;
                     font-family: 'Lora', serif;
                     text-align: center;
                 }
                 a{
-                    @include shop-now-button (25px,90%,5px)
+                    @include shop-now-button (25px,30%,5px);
+                        &:hover{
+                            transform: scale(1.08);
+                        }
+                    }
                 }
             }
         }   
     }
-}

@@ -72,7 +72,7 @@ header {
     height: 80px;
     background-color: #C6B4A5; }
     header span a img:hover {
-      height: 85px; }
+      transform: scale(1.1); }
   header nav div {
     width: 102%;
     --bs-navbar-padding-y: 0rem; }
@@ -143,7 +143,8 @@ footer {
   background: url(../assets/background-1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  padding: 0px 10px 0px 10px; }
   .grid-container-home main {
     grid-area: main-home;
     display: flex;
@@ -168,7 +169,7 @@ footer {
       flex-wrap: wrap;
       padding-bottom: 40px; }
     .grid-container-home main a {
-      width: 180px;
+      width: 170px;
       background-color: #38150B;
       display: flex;
       font-size: 30px;
@@ -180,27 +181,26 @@ footer {
       font-family: 'Niramit', sans-serif;
       padding: auto; }
       .grid-container-home main a:hover {
-        font-size: 32px; }
+        transform: scale(1.08); }
 
 .grid-container-about {
   display: grid;
   grid-template-areas: "header" "about-main" "footer";
-  background-color: #C6B4A5;
-  padding: 0px 30px 0px 30px; }
+  background-image: linear-gradient(to bottom, #c6b4a5, #c6b1a0, #c6ae9b, #c5ac96, #c5a991, #bb9f87, #b1957e, #a78b74, #917864, #7b6655, #665546, #524438);
+  padding: 0px 10px 0px 10px; }
   .grid-container-about main {
     grid-area: about-main;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "about-section about-photo";
-    background-color: #C6B4A5;
     align-items: center;
     padding: 10px 60px 30px 30px;
-    gap: 60px; }
+    gap: 40px; }
     .grid-container-about main section {
       grid-area: about-section;
       width: 100%; }
       .grid-container-about main section h1 {
-        font-size: 4vw;
+        font-size: 2.4em;
         font-weight: lighter;
         color: #38150B;
         font-family: 'Baloo Paaji 2', cursive; }
@@ -209,7 +209,7 @@ footer {
         flex-wrap: wrap;
         text-align: justify;
         padding-top: 30px;
-        font-size: 1.5vw;
+        font-size: 1.1em;
         font-family: fantasy;
         color: #38150B;
         font-family: 'Lora', serif; }
@@ -220,17 +220,17 @@ footer {
 .grid-container-shop {
   display: grid;
   grid-template-areas: "header" "main" "footer";
-  background-color: #C6B4A5;
-  padding: 0px 30px 0px 30px; }
+  background-image: linear-gradient(to bottom, #c6b4a5, #c6b1a0, #c6ae9b, #c5ac96, #c5a991, #bb9f87, #b1957e, #a78b74, #917864, #7b6655, #665546, #524438);
+  padding: 0px 10px 0px 10px; }
   .grid-container-shop main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "title-page title-page title-page" "shop-section shop-section shop-section";
     justify-content: center;
     padding: 10px 30px 30px 30px;
-    gap: 60px; }
+    gap: 40px; }
     .grid-container-shop main h1 {
-      font-size: 4vw;
+      font-size: 2.5em;
       font-weight: lighter;
       color: #38150B;
       font-family: 'Baloo Paaji 2', cursive; }
@@ -245,20 +245,20 @@ footer {
         justify-content: center;
         align-items: center;
         text-align: justify;
-        padding-top: 20px;
-        padding-bottom: 100px; }
+        padding-top: 0px;
+        padding-bottom: 50px; }
         .grid-container-shop main section div img {
           width: 29vi; }
         .grid-container-shop main section div p {
           width: 90%;
-          padding-top: 20px;
-          padding-bottom: 20px;
-          font-size: 1.5vw;
+          padding-top: 10px;
+          padding-bottom: 0px;
+          font-size: 1.2em;
           color: #38150B;
           font-family: 'Lora', serif;
           text-align: center; }
         .grid-container-shop main section div a {
-          width: 90%;
+          width: 30%;
           background-color: #38150B;
           display: flex;
           font-size: 25px;
@@ -269,6 +269,8 @@ footer {
           text-decoration: none;
           font-family: 'Niramit', sans-serif;
           padding: 5px; }
+          .grid-container-shop main section div a:hover {
+            transform: scale(1.08); }
 
 .grid-container-blog {
   display: grid;
@@ -276,7 +278,7 @@ footer {
   background: url(../assets/background-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0px 30px 0px 30px; }
+  padding: 0px 10px 0px 10px; }
   .grid-container-blog main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -285,7 +287,7 @@ footer {
     padding: 10px 30px 30px 30px;
     width: 100%; }
     .grid-container-blog main h1 {
-      font-size: 4vw;
+      font-size: 2.5em;
       font-weight: lighter;
       color: #38150B;
       font-family: 'Baloo Paaji 2', cursive; }
@@ -314,11 +316,11 @@ footer {
         .grid-container-blog main section article p {
           width: 90%;
           padding-top: 10px;
-          font-size: 1.3vw;
+          font-size: 1.2em;
           color: #38150B;
           font-family: 'Lora', serif; }
         .grid-container-blog main section article a {
-          width: auto;
+          width: 40%;
           background-color: #38150B;
           display: flex;
           font-size: 1.5vw;
@@ -329,6 +331,8 @@ footer {
           text-decoration: none;
           font-family: 'Niramit', sans-serif;
           padding: 5px; }
+          .grid-container-blog main section article a:hover {
+            transform: scale(1.05); }
 
 .grid-container-locations {
   display: grid;
@@ -336,13 +340,13 @@ footer {
   background: url(../assets/background-2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0px 30px 0px 30px; }
+  padding: 0px 10px 0px 10px; }
   .grid-container-locations main {
     display: grid;
     grid-template-areas: "title-page" "location-section";
     padding: 10px 30px 30px 30px; }
     .grid-container-locations main h1 {
-      font-size: 4vw;
+      font-size: 2.5em;
       font-weight: lighter;
       color: #38150B;
       font-family: 'Baloo Paaji 2', cursive; }
@@ -386,7 +390,7 @@ footer {
     .menu-items li {
       margin-bottom: 1rem; }
     .menu-items a {
-      font-size: 1.25rem;
+      font-size: 0.7em;
       padding-left: 15px; }
   .grid-container-home main h1 {
     font-size: 85px; }
@@ -397,20 +401,20 @@ footer {
   .grid-container-home main a {
     font-size: 29px; }
     .grid-container-home main a:hover {
-      font-size: 32px; }
+      transform: scale(1.05); }
   .grid-container-about {
-    padding: 0px 30px 0px 0px; }
+    padding: 0px 0px 0px 0px; }
     .grid-container-about main {
       grid-template-columns: auto;
       grid-template-rows: repeat(2, auto);
       grid-template-areas: "about-section" "about-photo";
-      padding: 10px 30px 30px 60px;
+      padding: 10px 30px 30px 30px;
       gap: 30px; }
       .grid-container-about main section h1 {
-        font-size: 5vw; }
+        font-size: 2em; }
       .grid-container-about main section p {
         padding-top: 15px;
-        font-size: 1.7vw; }
+        font-size: 1.1em; }
       .grid-container-about main div {
         align-items: center; }
       .grid-container-about main img {
@@ -420,10 +424,10 @@ footer {
     .grid-container-shop main {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "title-page title-page" "shop-section shop-section";
-      padding: 10px 30px 30px 60px;
+      padding: 10px 30px 30px 30px;
       gap: 30px; }
       .grid-container-shop main h1 {
-        font-size: 5vw; }
+        font-size: 2em; }
       .grid-container-shop main section {
         grid-template-areas: "shop-card shop-card"; }
         .grid-container-shop main section div {
@@ -432,12 +436,12 @@ footer {
             width: 95%; }
           .grid-container-shop main section div p {
             width: 95%;
-            font-size: 1.8vw; }
+            font-size: 1.1em; }
           .grid-container-shop main section div a {
-            width: 90%;
+            width: 40%;
             background-color: #38150B;
             display: flex;
-            font-size: 20px;
+            font-size: 1.1em;
             border-radius: 8px;
             color: #ffffff;
             justify-content: center;
@@ -445,24 +449,26 @@ footer {
             text-decoration: none;
             font-family: 'Niramit', sans-serif;
             padding: 5px; }
+            .grid-container-shop main section div a:hover {
+              transform: scale(1.06); }
   .grid-container-blog {
     padding: 0px 0px 0px 0px; }
     .grid-container-blog main {
       grid-template-columns: repeat(2, 1fr);
       grid-template-areas: "title-page title-page" "blog-section blog-section";
-      padding: 10px 60px 30px 60px; }
+      padding: 10px 30px 30px 30px; }
       .grid-container-blog main h1 {
-        font-size: 5vw; }
+        font-size: 2em; }
       .grid-container-blog main section {
         grid-template-areas: "blog-card blog-card";
         gap: 30px; }
         .grid-container-blog main section article p {
-          font-size: 1.6vw; }
+          font-size: 1.1em; }
         .grid-container-blog main section article a {
           width: auto;
           background-color: #38150B;
           display: flex;
-          font-size: 1.8vw;
+          font-size: 1.1em;
           border-radius: 8px;
           color: #ffffff;
           justify-content: center;
@@ -473,9 +479,9 @@ footer {
   .grid-container-locations {
     padding: 0px 0px 0px 0px; }
     .grid-container-locations main {
-      padding: 10px 30px 30px 60px; }
+      padding: 10px 30px 30px 30px; }
       .grid-container-locations main h1 {
-        font-size: 5vw;
+        font-size: 2em;
         font-weight: lighter;
         color: #38150B;
         font-family: 'Baloo Paaji 2', cursive; } }
@@ -483,8 +489,10 @@ footer {
 @media (max-width: 768px) {
   header span a img {
     background-color: transparent; }
+    header span a img:hover {
+      transform: scale(1); }
   .menu-items {
-    background-color: #C6B4A5;
+    background-image: linear-gradient(to right, #907f71, #ab9987, #c7b39e, #e3cfb5, #ffebcd);
     flex-direction: column;
     padding-left: 0px;
     gap: 5px; }
@@ -506,31 +514,28 @@ footer {
       justify-items: center; }
       .grid-container-home main h1 {
         justify-content: center;
-        font-size: 13vw; }
+        font-size: 11vw; }
       .grid-container-home main article {
         padding-bottom: 20px;
-        font-size: 6vw; }
+        font-size: 5vw; }
       .grid-container-home main a {
-        width: 33vw;
+        width: 25%;
         background-color: #C6B4A5;
-        font-size: 6vw;
+        font-size: 4vw;
         border-radius: 15px;
         color: #38150B; }
         .grid-container-home main a:hover {
-          font-size: 6.5vw; }
+          transform: scale(1); }
   .grid-container-about main section h1 {
-    font-size: 40px;
     text-align: center; }
   .grid-container-about main section p {
-    padding-top: 20px;
-    font-size: 20px; }
+    padding-top: 20px; }
   .grid-container-shop main {
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "title-page" "shop-section";
     gap: 0px; }
     .grid-container-shop main h1 {
-      font-size: 40px;
       text-align: center; }
     .grid-container-shop main section div {
       padding-bottom: 60px; }
@@ -538,20 +543,18 @@ footer {
         width: 80%; }
       .grid-container-shop main section div p {
         width: 80%;
-        font-size: 2.5vw;
         padding-top: 10px;
         padding-bottom: 0px; }
       .grid-container-shop main section div a {
-        font-size: 2.5vw;
-        text-decoration: none;
         padding: 8px;
-        width: 50%; }
+        width: 30%; }
+        .grid-container-shop main section div a:hover {
+          transform: scale(1); }
   .grid-container-blog main {
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "title-title" "blog-section"; }
     .grid-container-blog main h1 {
-      font-size: 40px;
       text-align: center; }
     .grid-container-blog main section {
       gap: 40px; }
@@ -560,13 +563,13 @@ footer {
         padding: 0px;
         padding-bottom: 10px; }
         .grid-container-blog main section article p {
-          width: 80%;
-          font-size: 2.5vw; }
+          width: 90%;
+          font-size: 0.9em; }
         .grid-container-blog main section article a {
-          font-size: 2.5vw;
-          padding: 6px; }
+          padding: 8px; }
+          .grid-container-blog main section article a:hover {
+            transform: scale(1); }
   .grid-container-locations main h1 {
-    font-size: 40px;
     text-align: center; }
   .grid-container-locations main section span {
     width: 80%;
@@ -578,17 +581,19 @@ footer {
 @media (max-width: 425px) {
   header {
     width: 90%;
-    justify-content: center; }
-    header .menu-items li a {
-      font-size: 18px; }
+    padding-bottom: 20px; }
+    header span a img {
+      height: 70px; }
+  .menu-items li a {
+    font-size: 18px; }
   .grid-container-about {
     padding: 0px 0px 0px 0px; }
     .grid-container-about main section {
-      width: 90%;
+      width: 100%;
       justify-content: center; }
       .grid-container-about main section h1 {
-        font-size: 30px;
-        text-align: center; }
+        font-size: 1.8em;
+        padding-bottom: 20px; }
       .grid-container-about main section p {
         font-size: 16px; }
     .grid-container-about main div img {
@@ -596,11 +601,11 @@ footer {
   .grid-container-shop main {
     padding: 0px 0px 0px 0px; }
     .grid-container-shop main h1 {
-      font-size: 30px;
-      text-align: center; }
+      font-size: 1.8em;
+      padding-bottom: 20px; }
     .grid-container-shop main section {
       width: 100%;
-      align-content: center;
+      align-self: center;
       grid-template-areas: "shop-card"; }
       .grid-container-shop main section div img {
         width: 90%; }
@@ -609,7 +614,7 @@ footer {
         font-size: 16px;
         text-align: center; }
       .grid-container-shop main section div a {
-        width: 50%;
+        width: 30%;
         background-color: #38150B;
         display: flex;
         font-size: 16px;
@@ -625,8 +630,8 @@ footer {
     .grid-container-blog main {
       padding: 0px 0px 0px 0px; }
       .grid-container-blog main h1 {
-        font-size: 30px;
-        text-align: center; }
+        font-size: 1.8em;
+        padding-bottom: 20px; }
       .grid-container-blog main section {
         width: 100%;
         align-content: center;
@@ -637,7 +642,7 @@ footer {
           width: 90%;
           font-size: 16px; }
         .grid-container-blog main section article a {
-          width: 50%;
+          width: 30%;
           background-color: #38150B;
           display: flex;
           font-size: 16px;
@@ -657,12 +662,22 @@ footer {
         width: 95%;
         padding-left: 5%; }
       .grid-container-locations main h1 {
-        font-size: 30px;
-        text-align: center; }
+        font-size: 1.8em;
+        padding-bottom: 20px; }
       .grid-container-locations main section span {
         width: 100%; } }
 
 @media (max-width: 320px) {
+  .grid-container-home main h1 {
+    font-size: 70px;
+    text-align: center; }
+  .grid-container-home main article {
+    padding-bottom: 20px;
+    font-size: 30px;
+    text-align: center; }
+  .grid-container-home main a {
+    width: 60%;
+    font-size: 28px; }
   .grid-container-shop main section div img {
     width: 80%; }
   .grid-container-shop main section div p {
@@ -678,6 +693,8 @@ footer {
           width: 80%; }
         .grid-container-blog main section article p {
           width: 80%; }
+        .grid-container-blog main section article a {
+          width: 50%; }
   .grid-container-locations main {
     justify-items: center; }
     .grid-container-locations main section {

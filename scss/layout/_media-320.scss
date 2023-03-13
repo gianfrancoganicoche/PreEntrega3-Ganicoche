@@ -1,4 +1,21 @@
 @media (max-width: 320px){
+    .grid-container-home {
+        main{
+            h1{
+                font-size: 70px;
+                text-align: center;
+            }
+            article{
+                padding-bottom: 20px;
+                font-size: 30px;
+                text-align: center;
+            }
+            a{
+                width: 60%;
+                font-size: 28px;
+            }
+        }
+    }   
     .grid-container-shop{
         main{
             section{
@@ -26,6 +43,9 @@
                     }
                     p{
                         width: 80%;
+                    }
+                    a{
+                        width: 50%;
                     }
                 }
             }

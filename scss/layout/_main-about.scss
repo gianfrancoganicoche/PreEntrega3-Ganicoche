@@ -4,30 +4,29 @@
     "header"
     "about-main"
     "footer";
-    background-color: $background-color;
-    padding: 0px 30px 0px 30px;
+    background-image: linear-gradient(to bottom, #c6b4a5, #c6b1a0, #c6ae9b, #c5ac96, #c5a991, #bb9f87, #b1957e, #a78b74, #917864, #7b6655, #665546, #524438);
+    padding: 0px 10px 0px 10px;   
     main{
         grid-area: about-main;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "about-section about-photo";
-        background-color: $background-color;
         align-items: center;
         padding: 10px 60px 30px 30px;
-        gap: 60px;
+        gap: 40px;
         section{
             grid-area: about-section;
             width: 100%;
             h1{
-                @include title(4vw);
+                @include title(2.4em);
             }
             p{
                 display: flex;
                 flex-wrap: wrap;
                 text-align: justify;
                 padding-top: 30px;
-                font-size: 1.5vw;
+                font-size: 1.1em;
                 font-family: fantasy;
                 color: $font-color;
                 font-family: 'Lora', serif

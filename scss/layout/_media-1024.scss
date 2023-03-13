@@ -18,7 +18,7 @@
             margin-bottom: 1rem;
         }
         a{
-            font-size: 1.25rem;
+            font-size: 0.7em;
             padding-left: 15px;
             }
         }
@@ -35,28 +35,28 @@
             a{
                 font-size: 29px;
                 &:hover{
-                    font-size: 32px;
+                    transform: scale(1.05);
                 }
             }
         }   
     }
     .grid-container-about{
-        padding: 0px 30px 0px 0px;
+        padding: 0px 0px 0px 0px;
         main{
             grid-template-columns: auto;
             grid-template-rows: repeat(2, auto);
             grid-template-areas:
             "about-section"
             "about-photo";
-            padding: 10px 30px 30px 60px;
+            padding: 10px 30px 30px 30px;
             gap: 30px;
             section{
                 h1{
-                    font-size: 5vw;
+                    font-size: 2em;
                 }
                 p{
                     padding-top: 15px;
-                    font-size: 1.7vw;
+                    font-size: 1.1em;
                 }
             }
             div{
@@ -74,10 +74,10 @@
             grid-template-areas:
             "title-page title-page"
             "shop-section shop-section";
-            padding: 10px 30px 30px 60px;
+            padding: 10px 30px 30px 30px;
             gap: 30px;
             h1{
-                font-size: 5vw;
+                font-size: 2em;
                 }
             section{
                 grid-template-areas:
@@ -89,10 +89,13 @@
                     }
                     p{
                         width: 95%;
-                        font-size: 1.8vw;
+                        font-size: 1.1em;
                     }
                     a{
-                        @include shop-now-button (20px,90%,5px)
+                        @include shop-now-button (1.1em,40%,5px);
+                        &:hover{
+                            transform: scale(1.06);
+                        }
                     }
                 }
             }   
@@ -105,9 +108,9 @@
             grid-template-areas:
             "title-page title-page"
             "blog-section blog-section";
-            padding: 10px 60px 30px 60px;
+            padding: 10px 30px 30px 30px;
             h1{
-                font-size: 5vw;
+                font-size: 2em;
             }
             section{
                 grid-template-areas:
@@ -115,10 +118,10 @@
                 gap: 30px;
                 article{
                     p{
-                        font-size: 1.6vw;
+                        font-size: 1.1em;
                     }
                     a{
-                        @include shop-now-button(1.8vw,auto,5px)
+                        @include shop-now-button(1.1em,auto,5px)
                     }
                 }
             }
@@ -127,9 +130,9 @@
     .grid-container-locations{
         padding: 0px 0px 0px 0px;
         main{
-            padding: 10px 30px 30px 60px;
+            padding: 10px 30px 30px 30px;
             h1{
-                @include title(5vw);
+                @include title(2em);
             }
         }
     }

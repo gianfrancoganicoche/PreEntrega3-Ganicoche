@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 @media (min-width: 1024px) {
   .focus-in-contract-bck {
     -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
@@ -30,11 +35,6 @@
       -webkit-filter: blur(0);
       filter: blur(0);
       opacity: 1; } } }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
 
 .nav-container {
   display: flex;
@@ -560,7 +560,8 @@ footer {
         .grid-container-home main a:hover {
           transform: scale(1); }
   .grid-container-about main section h1 {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 20px; }
   .grid-container-about main section p {
     padding-top: 20px; }
   .grid-container-shop main {
@@ -569,26 +570,30 @@ footer {
     grid-template-areas: "title-page" "shop-section";
     gap: 0px; }
     .grid-container-shop main h1 {
-      text-align: center; }
-    .grid-container-shop main section div {
-      padding-bottom: 60px; }
-      .grid-container-shop main section div img {
-        width: 80%; }
-      .grid-container-shop main section div p {
-        width: 80%;
-        padding-top: 10px;
-        padding-bottom: 0px; }
-      .grid-container-shop main section div a {
-        padding: 8px;
-        width: 30%; }
-        .grid-container-shop main section div a:hover {
-          transform: scale(1); }
+      text-align: center;
+      padding-bottom: 20px; }
+    .grid-container-shop main section {
+      padding-top: 20px; }
+      .grid-container-shop main section div {
+        padding-bottom: 60px; }
+        .grid-container-shop main section div img {
+          width: 80%; }
+        .grid-container-shop main section div p {
+          width: 80%;
+          padding-top: 10px;
+          padding-bottom: 0px; }
+        .grid-container-shop main section div a {
+          padding: 8px;
+          width: 30%; }
+          .grid-container-shop main section div a:hover {
+            transform: scale(1); }
   .grid-container-blog main {
     grid-template-columns: 100%;
     grid-template-rows: repeat(2, auto);
     grid-template-areas: "title-title" "blog-section"; }
     .grid-container-blog main h1 {
-      text-align: center; }
+      text-align: center;
+      padding-bottom: 20px; }
     .grid-container-blog main section {
       gap: 40px; }
       .grid-container-blog main section article {
@@ -603,7 +608,8 @@ footer {
           .grid-container-blog main section article a:hover {
             transform: scale(1); }
   .grid-container-locations main h1 {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 20px; }
   .grid-container-locations main section span {
     width: 80%;
     height: 80vi; }
@@ -619,23 +625,24 @@ footer {
       height: 70px; }
   .menu-items li a {
     font-size: 18px; }
+  .grid-container-home main a {
+    width: 40%;
+    font-size: 25px; }
   .grid-container-about {
     padding: 0px 0px 0px 0px; }
     .grid-container-about main section {
       width: 100%;
       justify-content: center; }
       .grid-container-about main section h1 {
-        font-size: 1.8em;
-        padding-bottom: 20px; }
+        font-size: 1.8em; }
       .grid-container-about main section p {
         font-size: 16px; }
     .grid-container-about main div img {
-      width: 90%; }
+      width: 100%; }
   .grid-container-shop main {
     padding: 0px 0px 0px 0px; }
     .grid-container-shop main h1 {
-      font-size: 1.8em;
-      padding-bottom: 20px; }
+      font-size: 1.8em; }
     .grid-container-shop main section {
       width: 100%;
       align-self: center;
@@ -663,8 +670,7 @@ footer {
     .grid-container-blog main {
       padding: 0px 0px 0px 0px; }
       .grid-container-blog main h1 {
-        font-size: 1.8em;
-        padding-bottom: 20px; }
+        font-size: 1.8em; }
       .grid-container-blog main section {
         width: 100%;
         align-content: center;
@@ -695,8 +701,7 @@ footer {
         width: 95%;
         padding-left: 5%; }
       .grid-container-locations main h1 {
-        font-size: 1.8em;
-        padding-bottom: 20px; }
+        font-size: 1.8em; }
       .grid-container-locations main section span {
         width: 100%; } }
 

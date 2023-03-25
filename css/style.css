@@ -36,6 +36,46 @@
       filter: blur(0);
       opacity: 1; } } }
 
+.bounce-in-top {
+  -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both; }
+
+@-webkit-keyframes bounce-in-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+    filter: blur(40px);
+    opacity: 0; }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+    transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1; } }
+
 .nav-container {
   display: flex;
   position: relative;
@@ -202,7 +242,7 @@ footer {
       flex-wrap: wrap;
       padding-bottom: 40px; }
     .grid-container-home main a {
-      width: 170px;
+      width: auto;
       background-color: #38150B;
       display: flex;
       font-size: 30px;
@@ -212,22 +252,21 @@ footer {
       align-content: center;
       text-decoration: none;
       font-family: 'Niramit', sans-serif;
-      padding: auto; }
+      padding: 7px; }
       .grid-container-home main a:hover {
         transform: scale(1.08); }
 
 .grid-container-about {
   display: grid;
-  grid-template-areas: "header" "about-main" "footer";
+  grid-template-areas: "header" "main" "footer";
   background-image: linear-gradient(to bottom, #c6b4a5, #c6b1a0, #c6ae9b, #c5ac96, #c5a991, #bb9f87, #b1957e, #a78b74, #917864, #7b6655, #665546, #524438);
   padding: 0px 10px 0px 10px; }
   .grid-container-about main {
-    grid-area: about-main;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: "about-section about-photo";
     align-items: center;
-    padding: 10px 60px 30px 30px;
+    padding: 10px 30px 30px 30px;
     gap: 40px; }
     .grid-container-about main section {
       grid-area: about-section;
@@ -275,11 +314,11 @@ footer {
       .grid-container-shop main section div {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: justify;
-        padding-top: 0px;
-        padding-bottom: 50px; }
+        align-items: center;
+        padding-bottom: 50px;
+        justify-content: center;
+        padding-top: 0px; }
         .grid-container-shop main section div img {
           width: 29vi; }
         .grid-container-shop main section div p {
@@ -291,7 +330,7 @@ footer {
           font-family: 'Lora', serif;
           text-align: center; }
         .grid-container-shop main section div a {
-          width: 30%;
+          width: auto;
           background-color: #38150B;
           display: flex;
           font-size: 25px;
@@ -325,8 +364,8 @@ footer {
       color: #38150B;
       font-family: 'Baloo Paaji 2', cursive; }
     .grid-container-blog main section {
-      height: auto;
       grid-area: blog-section;
+      height: auto;
       display: grid;
       grid-template-areas: "blog-card blog-card blog-card" "blog-card blog-card blog-card";
       flex-wrap: nowrap;
@@ -334,15 +373,16 @@ footer {
       .grid-container-blog main section article {
         display: flex;
         flex-direction: column;
-        justify-self: center;
         text-align: justify;
         align-items: center;
+        padding-bottom: 20px;
+        justify-self: center;
+        text-align: justify;
         background-color: #C6B4A5;
         border-radius: 10px;
         width: 90%;
         height: 100%;
-        gap: 20px;
-        padding-bottom: 20px; }
+        gap: 20px; }
         .grid-container-blog main section article img {
           width: 90%;
           padding-top: 20px; }
@@ -353,7 +393,7 @@ footer {
           color: #38150B;
           font-family: 'Lora', serif; }
         .grid-container-blog main section article a {
-          width: 40%;
+          width: auto;
           background-color: #38150B;
           display: flex;
           font-size: 1.5vw;
@@ -471,7 +511,7 @@ footer {
             width: 95%;
             font-size: 1.1em; }
           .grid-container-shop main section div a {
-            width: 40%;
+            width: auto;
             background-color: #38150B;
             display: flex;
             font-size: 1.1em;
@@ -552,7 +592,7 @@ footer {
         padding-bottom: 20px;
         font-size: 5vw; }
       .grid-container-home main a {
-        width: 25%;
+        width: auto;
         background-color: #C6B4A5;
         font-size: 4vw;
         border-radius: 15px;
@@ -583,8 +623,7 @@ footer {
           padding-top: 10px;
           padding-bottom: 0px; }
         .grid-container-shop main section div a {
-          padding: 8px;
-          width: 30%; }
+          padding: 8px; }
           .grid-container-shop main section div a:hover {
             transform: scale(1); }
   .grid-container-blog main {
@@ -626,8 +665,7 @@ footer {
   .menu-items li a {
     font-size: 18px; }
   .grid-container-home main a {
-    width: 40%;
-    font-size: 25px; }
+    font-size: 23px; }
   .grid-container-about {
     padding: 0px 0px 0px 0px; }
     .grid-container-about main section {
@@ -654,7 +692,7 @@ footer {
         font-size: 16px;
         text-align: center; }
       .grid-container-shop main section div a {
-        width: 30%;
+        width: auto;
         background-color: #38150B;
         display: flex;
         font-size: 16px;
@@ -681,7 +719,7 @@ footer {
           width: 90%;
           font-size: 16px; }
         .grid-container-blog main section article a {
-          width: 30%;
+          width: auto;
           background-color: #38150B;
           display: flex;
           font-size: 16px;
@@ -714,7 +752,6 @@ footer {
     font-size: 30px;
     text-align: center; }
   .grid-container-home main a {
-    width: 60%;
     font-size: 28px; }
   .grid-container-shop main section div img {
     width: 80%; }

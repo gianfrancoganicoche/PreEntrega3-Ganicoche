@@ -1,9 +1,6 @@
 .grid-container-blog{
     @include layout-noindex;
-    background: url(../assets/background-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0px 10px 0px 10px;   
+    @include background-with-image;  
     main{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -17,8 +14,8 @@
             @include title(2.5em);
         }
         section{
-            height: auto;
             grid-area: blog-section;
+            height: auto;
             display: grid;
             grid-template-areas:
             "blog-card blog-card blog-card"
@@ -26,17 +23,14 @@
             flex-wrap: nowrap;
             gap: 20px;
             article{
-                display: flex;
-                flex-direction: column;
+                @include card (20px);
                 justify-self: center;
                 text-align: justify;
-                align-items: center;
                 background-color: $background-color;
                 border-radius: 10px;
                 width: 90%;
                 height: 100%;
                 gap: 20px;
-                padding-bottom: 20px;
                 img{
                     width: 90%;
                     padding-top: 20px;
@@ -49,7 +43,7 @@
                     font-family: 'Lora', serif;
                 }
                 a{
-                    @include shop-now-button(1.5vw,40%,5px);
+                    @include shop-now-button(1.5vw,5px);
                     &:hover{
                         transform:scale(1.05);
                     }

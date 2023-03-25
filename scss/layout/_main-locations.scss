@@ -1,9 +1,6 @@
 .grid-container-locations{
     @include layout-noindex;
-    background: url(../assets/background-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 0px 10px 0px 10px;   
+    @include background-with-image;  
     main{
         display: grid;
         grid-template-areas:

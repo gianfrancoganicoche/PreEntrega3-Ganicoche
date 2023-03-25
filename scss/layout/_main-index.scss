@@ -35,7 +35,7 @@
             padding-bottom: 40px;
         }
         a{
-            @include shop-now-button(30px,170px,auto);
+            @include shop-now-button(30px,7px);
             &:hover{
                 transform: scale(1.08);
             }

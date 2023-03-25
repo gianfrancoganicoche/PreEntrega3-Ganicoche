@@ -42,7 +42,7 @@
                 font-size: 5vw;
             }
             a{
-                width: 25%;
+                width: auto;
                 background-color: $background-color;
                 font-size: 4vw;
                 border-radius: 15px;
@@ -90,7 +90,6 @@
                     }
                     a{
                         padding: 8px;
-                        width: 30%;
                         &:hover{
                             transform: scale(1);
                         }

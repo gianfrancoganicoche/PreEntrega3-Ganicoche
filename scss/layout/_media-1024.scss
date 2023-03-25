@@ -92,7 +92,7 @@
                         font-size: 1.1em;
                     }
                     a{
-                        @include shop-now-button (1.1em,40%,5px);
+                        @include shop-now-button (1.1em,5px);
                         &:hover{
                             transform: scale(1.06);
                         }
@@ -121,7 +121,7 @@
                         font-size: 1.1em;
                     }
                     a{
-                        @include shop-now-button(1.1em,auto,5px)
+                        @include shop-now-button(1.1em,5px)
                     }
                 }
             }

@@ -11,8 +11,25 @@
     "main"
     "footer";
 }
-@mixin shop-now-button ($font-size,$width,$padding){
-    width: $width;
+@mixin background-with-image{
+    background: url(../assets/background-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px 10px 0px 10px; 
+}
+@mixin background-no-image{
+    background-image: linear-gradient(to bottom, #c6b4a5, #c6b1a0, #c6ae9b, #c5ac96, #c5a991, #bb9f87, #b1957e, #a78b74, #917864, #7b6655, #665546, #524438);
+    padding: 0px 10px 0px 10px;
+}
+@mixin card ($padding-bottom){
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    padding-bottom: $padding-bottom;
+}
+@mixin shop-now-button ($font-size,$padding){
+    width: auto;
     background-color: #38150B;
     display: flex;
     font-size: $font-size;
@@ -23,7 +40,7 @@
     text-decoration: none;
     font-family: 'Niramit', sans-serif;
     padding: $padding;
-}
+    }
 @mixin title-768{
     text-align: center;
     padding-bottom: 20px;

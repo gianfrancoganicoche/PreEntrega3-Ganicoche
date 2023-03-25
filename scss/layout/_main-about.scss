@@ -1,19 +1,13 @@
 .grid-container-about{
-    display: grid;
-    grid-template-areas:
-    "header"
-    "about-main"
-    "footer";
-    background-image: linear-gradient(to bottom, #c6b4a5, #c6b1a0, #c6ae9b, #c5ac96, #c5a991, #bb9f87, #b1957e, #a78b74, #917864, #7b6655, #665546, #524438);
-    padding: 0px 10px 0px 10px;   
+    @include layout-noindex;
+    @include background-no-image;
     main{
-        grid-area: about-main;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
         "about-section about-photo";
         align-items: center;
-        padding: 10px 60px 30px 30px;
+        padding: 10px 30px 30px 30px;
         gap: 40px;
         section{
             grid-area: about-section;
